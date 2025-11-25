@@ -1,3 +1,4 @@
+```markdown
 # UIB (Universal Interaction Blockchain)
 
 **A decentralized, immutable ledger that records all human interactions to create universal transparency through data.**
@@ -12,7 +13,7 @@ UIB creates a permanent, public record of all interactions—digital and physica
 
 ## The Core Principle
 
-"Data recorded before events occur cannot be manipulated after events occur."
+> "Data recorded before events occur cannot be manipulated after events occur."
 
 By capturing interactions continuously and immutably, UIB enables:
 - **Pattern Recognition**: See what really happens over time
@@ -54,7 +55,10 @@ By capturing interactions continuously and immutably, UIB enables:
 ## How It Works
 
 ### 1. Universal Recording
+
+```javascript
 // Every app, device, and system can register events
+```
 
 ### 2. Privacy by Default
 
@@ -68,28 +72,24 @@ By capturing interactions continuously and immutably, UIB enables:
 
 **Anyone can request to see anyone's data, but in return you have to share yours:**
 
+```javascript
 // Request revelation - creates bidirectional transparency
-const revealRequest = await uib.requestReveal({
-  target: hash(person_or_entity),
-  events: [hash1, hash2, hash3, ...],
-  reason: 'pattern_analysis',
-  justification: 'Detecting systematic behavior',
-  requester: verified_identity // Your identity FULLY revealed to target
-});
 
- What happens IMMEDIATELY and AUTOMATICALLY:
- 1. Your request recorded immutably (forever)
- 2. Target notified instantly
- 3. Target sees YOUR complete profile:
-    - Your identity
-    - Your financial connections
-    - Your social network
-    - Your interaction history
-    - WHO you're connected to (the key insight!)
- 4. Target can investigate YOU in return
+// What happens IMMEDIATELY and AUTOMATICALLY:
+// 1. Your request recorded immutably (forever)
+// 2. Target notified instantly
+// 3. Target sees YOUR complete profile:
+//    - Your identity
+//    - Your financial connections
+//    - Your social network
+//    - Your interaction history
+//    - WHO you're connected to (the key insight!)
+// 4. Target can investigate YOU in return
+```
 
 ### 4. Immutable Storage
 
+```
 ┌─────────────────────────────────────┐
 │   Event Registered                  │
 │   Timestamp: 2025-11-24 14:32:18   │
@@ -112,15 +112,17 @@ const revealRequest = await uib.requestReveal({
 │   Cannot be deleted                │
 │   Cannot be altered                │
 └─────────────────────────────────────┘
-
+```
 
 ### 5. Universal Analysis
 
 **Public API for anyone to analyze patterns:**
 
+```javascript
 // Query API - anyone can use
 // Returns: patterns, anomalies, correlations, statistics
 // Without revealing individual data (unless sharing yours)
+```
 
 ## Real-World Applications
 
@@ -221,15 +223,14 @@ const revealRequest = await uib.requestReveal({
 - **Cryptographic**: Verified via merkle trees and signatures
 
 ### 🔐 Privacy Architecture
+
 ```
 Layer 1: Everything hashed by default
 Layer 2: Zero-knowledge proofs where applicable
 Layer 3: Differential privacy for aggregate queries
-Layer 4: Revelation only via 100-validator consensus
+Layer 4: Revelation only via mutual transparency
 Layer 5: GDPR-compliant (anonymization, not deletion)
 ```
-
-IMPORTANT CONCEPT
 
 ### 🧬 Proof of Life
 
@@ -251,6 +252,7 @@ Identity based on **living a real human life:**
 ### 🏗️ Future-Proof Architecture
 
 **Extensible event system:**
+
 ```javascript
 // Today: Standard events
 type: 'social:message:send'
@@ -316,7 +318,6 @@ type: 'neural:intent:detected'
 
 **Getting Started:**
 
-
 ## License
 
 **AGPL-3.0 + Ethical Use Clause**
@@ -335,10 +336,11 @@ type: 'neural:intent:detected'
 ## Community
 
 - 🌐 **Website**: https://universalinteractionblockchain.org
-- 🐙 **GitHub**: [https://github.com/uib](https://github.com/uib-project/uib)
+- 🐙 **GitHub**: https://github.com/uib-project/uib
 
 ## Support the Project
 
 UIB is a public good. We accept:
 - 💰 **Donations**: Crypto & fiat accepted
 - 🎁 **Grants**: Apply via foundation partnerships
+```
