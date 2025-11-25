@@ -1,4 +1,4 @@
-```markdown
+
 # UIB (Universal Interaction Blockchain)
 
 **A decentralized, immutable ledger that records all human interactions to create universal transparency through data.**
@@ -329,7 +329,7 @@ type: 'neural:intent:detected'
 - ❌ Prohibited: mass surveillance, human rights violations
 - ❌ Prohibited: discrimination, authoritarian control
 
-**Governments:** Must obtain certification demonstrating compliance with human rights standards. See [GOVERNMENTAL-USE.md](GOVERNMENTAL-USE.md).
+**Governments:** Must obtain certification demonstrating compliance with human rights standards. 
 
 **Commercial:** Contact licensing@universalinteractionblockchain.org for commercial licensing.
 
