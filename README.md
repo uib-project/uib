@@ -56,48 +56,6 @@ By capturing interactions continuously and immutably, UIB enables:
 ### 1. Universal Recording
 // Every app, device, and system can register events
 
-import { UIBClient } from '@uib/sdk';
-
-const uib = new UIBClient({ network: 'mainnet' });
-
-// Example: Social media interaction
-await uib.registerEvent({
-  type: 'social:profile:view',
-  actor: hash(user_id),
-  target: hash(profile_id),
-  metadata: {
-    duration: '5min',
-    sections_viewed: ['photos', 'posts']
-  },
-  spatial: { location: fuzzyGPS(lat, lon) },
-  privacy: { visibility: 'hash_only' }
-});
-
-// Example: Financial transaction
-await uib.registerEvent({
-  type: 'financial:purchase:retail',
-  actor: hash(buyer_id),
-  target: hash(merchant_id),
-  metadata: {
-    amount: 250.00,
-    category: 'electronics'
-  },
-  spatial: { location: store_location }
-});
-
-// Example: Physical meeting
-await uib.registerEvent({
-  type: 'physical:tap:nfc',
-  actor: hash(person_a),
-  target: hash(person_b),
-  metadata: {
-    force_vector: accelerometer_data,
-    duration: '500ms'
-  },
-  spatial: { location: meeting_location }
-});
-```
-
 ### 2. Privacy by Default
 
 **Everything is hashed initially:**
@@ -154,7 +112,7 @@ const revealRequest = await uib.requestReveal({
 │   Cannot be deleted                │
 │   Cannot be altered                │
 └─────────────────────────────────────┘
-```
+
 
 ### 5. Universal Analysis
 
